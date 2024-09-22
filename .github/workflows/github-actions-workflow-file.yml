@@ -1,0 +1,15 @@
+name: Github Actions Demo
+on: push
+jobs:
+  Example-Actions-Job:
+    name: Exploring Github Actions
+    # It can be windows-latest, mac-latest or instead of latest specify version.
+    runs-on: ubuntu-latest
+    steps: 
+      # The event that triggered the workflow
+      - run: echo "The job was triggered by a ${{ github.event_name }} event."
+
+      # Runner information
+      - run: echo "The job is running on a ${{ runner.os }} server hosted by Github."
+
+      
